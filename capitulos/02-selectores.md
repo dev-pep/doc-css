@@ -1,6 +1,4 @@
-# Sin título
-
-## Selectores
+# Selectores
 
 Los nombres de selectores, por convenio, deberían estar formados por letras minúsculas y guiones (***-***) únicamente.
 
