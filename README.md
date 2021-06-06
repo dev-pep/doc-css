@@ -11,7 +11,7 @@ Estos son mis apuntes de *CSS*.
 
 ---
 
-Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+[![CC BY 4.0][cc-by-shield]][cc-by]
 
 Esta obra está bajo una
 [Licencia Creative Commons Atribución 4.0 Internacional][cc-by].
