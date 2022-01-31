@@ -27,7 +27,7 @@ Selecciona un elemento concreto. En el ejemplo estaríamos seleccionando un elem
 El selector más específico tiene preferencia. Ante dos selectores en conflicto con la misma especificidad, tiene preferencia el que está declarado más tarde.
 
 Especificidad, en orden ascendente:
-- Elemento.
+- Elemento (etiqueta *HTML*).
 - Clase.
 - *ID*.
 - Estilos *inline*.
@@ -75,7 +75,7 @@ Las reglas de especificidad en *combinators* se complican bastante.
 
 ## Selectores de atributos
 
-Tienen la forma `<etiqueta>[atributo=valor]`, y seleccionan la etiqueta especificada, pero solo si tienen el valor deseado para el atributo indicado.
+Tienen la forma `etiqueta[atributo=valor]`, y seleccionan la etiqueta (elemento) especificada, pero solo si tienen el valor deseado para el atributo indicado.
 
 ```css
 h2[class=especial] { color: red; }
@@ -83,7 +83,7 @@ h2[class=especial] { color: red; }
 
 No es necesario indicar los valores entrecomillados. Los valores no deberían contener espacios, ya que eso les da un significado especial, pero si aún así queremos tratar esos espacios como caracteres normales, se puede entrecomillar el valor, o indicar el espacio *escaped* (incluso ambas cosas).
 
-Si en lugar de ***=*** usamos el operador ***^=***, estamos indicando "empieza por". ***$=*** indica "termina en". Y ***\*=*** indica "contiene".
+Si en lugar de ***=*** usamos el operador ***^=***, estamos indicando "empieza por". ***\$=*** indica "termina en". Y ***\*=*** indica "contiene".
 
 Algunos atributos *HTML* (como `class`) admiten una serie de valores separados por espacio. En el caso de `class`, sería un modo de dar varias clases a un elemento.
 
@@ -91,7 +91,7 @@ Algunos atributos *HTML* (como `class`) admiten una serie de valores separados p
 <h1 class="titulo titulo-pagina titulo1">Esto es un título</h1>
 ```
 
-En este caso, si queremos seleccionar todos los elementos `<h1>` que pertenezcan a la clase ***titulo-pagina***, podemos hacerlo:
+En este caso, si queremos seleccionar todos los elementos `<h1>` que pertenezcan a la clase ***titulo-pagina***, podemos hacerlo usando el operador ***~=***:
 
 ```css
 h1[class~=titulo-pagina] { color: red; }

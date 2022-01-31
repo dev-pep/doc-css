@@ -132,6 +132,22 @@ Si tenemos este *HTML*:
 
 El texto será rojo, porque se aplica la especificidad: una clase es más específica que una etiqueta.
 
+Si deseamos que un atributo concreto tenga prioridad, independientemente de las normas mencionadas, añadiremos la etiqueta ***!important***:
+
+```css
+.especial {
+    font-size: 15px;
+    color: red;
+
+}
+p {
+    font-size: 18px !important;
+    color: blue;
+}
+```
+
+En este caso, la etiqueta `<p class="especial">Texto</p>` pintará el texto de color rojo, pero con un tamaño de 18 píxeles.
+
 En general, cada regla *CSS* está compuesta por un selector, y una serie de pares propiedad/valor separados por dos puntos (***:***) y terminados en punto y coma (***;***). Las propiedades y valores son *case sensitive*.
 
 Si una propiedad es desconocida o se da un valor inválido, la declaración es inválida y es simplemente ignorada. *CSS* admite algunas funciones concretas como valores.

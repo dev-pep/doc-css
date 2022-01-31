@@ -2,7 +2,7 @@
 
 ## Colores
 
-Para dar valor a las propiedades de color, debemos definir un color. Hay 3 formas de hacerlo: por nombre (***skyblue***), por código hexadecimal *RGB* (***#87cefa***) o mediante la función `rgb()` (***rgb(135,206,235)***).
+Para dar valor a las propiedades de color, debemos definir un color. Hay 3 formas de hacerlo: por nombre (***skyblue***), por código hexadecimal *RGB* (***#87cefa*** o ***#3f5***) o mediante la función `rgb()` (***rgb(135,206,235)***).
 
 Para color del texto se usa la propiedad `color`. Para color de fondo, `background-color`, aunque se puede usar el *shorthand* `background`.
 
