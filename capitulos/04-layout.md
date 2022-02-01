@@ -63,7 +63,7 @@ Para gestionar el espacio de forma *responsive* en caso de que ampliar o reducir
 
 Existe un *shorthand* para estas propiedades: `flex`. Si se le dan tres argumentos, los toma como *grow*, *shrink* y *basis*.
 
-Independientemente de la alineación (vertical) definida en el contenedor, cada elementos puede tener su propia alineación, que *overrides* la del contenedor (`align-items`). La propiedad del elemento es `align-self`.
+Independientemente de la alineación (vertical) definida en el contenedor, cada elemento puede tener su propia alineación, que *overrides* la del contenedor (`align-items`). La propiedad del elemento es `align-self`.
 
 ## *Grid*
 
@@ -84,7 +84,6 @@ Para alinear verticalmente, existe la propiedad `align-content`. Podemos usar lo
 Los *gaps* son los huecos que hay entre los elementos. Hay *column gaps* y *row gaps*. Podemos dar el valor de los primeros mediante la propiedad `grid-column-gap` y dándole un tamaño. Para columnas, `grid-row-gap`. Con el *shorthand* `grid-gap` damos los valores de columna y fila.
 
 Los elementos que se van encontrando en un contenedor (por ejemplo elementos `<div>` dentro de un contenedor también `<div>`), se van asignando por orden, primero los de la fila 1, luego la 2, etc. Alternativamente, se puede indicar, **para cada elemento**, qué fila(s) y/o columna(s) ocupará:
-
 
 ```
 grid-column: 1 / 3;
@@ -113,7 +112,7 @@ Supongamos que tenemos un elemento en la página que debe cambiar de color cuand
 }
 ```
 
-Si además queremos que las propiedades del elemento (en este caso, `background`) no cambién inmediatamente, sino que lo hagan mediante una transición, deberemos definir la propiedad `transition` en ese elemento. Así que añadiremos, por ejemplo:
+Si además queremos que las propiedades del elemento (en este caso, `background`) no cambien inmediatamente, sino que lo hagan mediante una transición, deberemos definir la propiedad `transition` en ese elemento. Así que añadiremos, por ejemplo:
 
 ```css
 #boton-id {
@@ -121,7 +120,7 @@ Si además queremos que las propiedades del elemento (en este caso, `background`
 }
 ```
 
-En este caso, definimos que las transiciones en `background` duren 0.3 segundos. Si queremos especificar milisegundos, pondremos ***300ms***. A continuación seleccionaremos uno de los posibles estilos de transición: ***ease*** y ***ease-in-out*** hacen un tipo distinto de interpolación cada una, mientras que ***linear*** lo hace lineal, por ejemplo. Como tercer argumento, indicamos el *delay* en empezar la transición (por defecto 0).
+En este caso, definimos que las transiciones en `background` duren 0.3 segundos en ese elemento. Si queremos especificar milisegundos, pondremos ***300ms***. A continuación seleccionaremos uno de los posibles estilos de transición: ***ease*** y ***ease-in-out*** hacen un tipo distinto de interpolación cada una, mientras que ***linear*** lo hace lineal, por ejemplo. Como tercer argumento, indicamos el *delay* en empezar la transición (por defecto 0).
 
 Si queremos que la transición afecte a más propiedades, las indicamos, separadas por comas. Si queremos que afecte a todas las propiedades indicaremos el valor ***all*** en lugar de esa lista.
 
