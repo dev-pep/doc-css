@@ -1,6 +1,6 @@
 # Bootstrap
 
-Apuntes de *Bootstrap 5*.
+Apuntes de los aspectos más relevantes de *Bootstrap 5*.
 
 ## Instalación
 
@@ -44,7 +44,7 @@ También es posible usar gestores de paquetes, como *npm* o *yarn*.
 
 ## Sistema de rejilla (*grid*)
 
-Dividido en 12 columnas. Basado en el *flexbox CSS*.
+Dividido en 12 columnas. Basado en el *flexbox CSS*. Es la característica clave de *Bootstrap*.
 
 ### *Breakpoints*
 
@@ -135,6 +135,22 @@ Cuando la suma de anchos supera 12, la siguiente columna se pasa debajo (*wrappe
 
 ### Espaciado
 
-Tanto los contenedores como las filas como las columnas tienen un margen (alrededor) y un *padding* (interno). Para cambiar estos valores se usan las clases ***m-0*** a ***m-5*** para el margen, o ***p-0*** a ***p-5*** para el *padding*. En el caso de filas o columnas, por ejemplo, el margen indica la separación entre ellas.
+Tanto los contenedores como las filas como las columnas tienen un margen (alrededor) y un *padding* o *gutter* (interno). Para cambiar estos valores se usan las clases ***m-0*** (sin margen) a ***m-5*** para el margen, o ***p-0*** (sin *padding*) a ***p-5*** para el *padding*. En el caso de filas o columnas, por ejemplo, el margen indica la separación entre ellas.
 
-También es posible especificar solo la componente vertical u horizontal del espaciado, insertando ***x*** o ***y*** como segundo carácter de la clase: ***mx-4***, ***py-2***, etc.
+También es posible especificar solo la componente vertical u horizontal del espaciado, insertando ***x*** o ***y*** como segundo carácter de la clase: ***mx-4***, ***py-2***, etc. En lugar de ***x*** e ***y***, existen los caracteres ***t***, ***b***, ***l*** y ***r*** (arriba, abajo, izquierda, derecha).
+
+## Componentes
+
+### Botones
+
+El formato típico de un botón es:
+
+```html
+<button type="button" class="btn btn-primary">Botón</button>
+```
+
+La clase ***btn*** está diseñada para etiquetas `<button>`, pero también se puede utilizar con `<a>` o `<input>`. A parte de ***btn*** se le debe dar un estilo con prefijo ***btn-*** y sufijo ***primary***, ***secondary***, ***success***, ***danger***, ***warning***, ***info***, ***light***, ***dark*** o ***link***. Si queremos que el botón sea de tipo *outline*, el prefijo será ***btn-outline-*** (exceptuando sufijo ***link***).
+
+Si además queremos indicar tamaño, existen las clases ***btn-lg*** y ***btn-sm***.
+
+En la etiqueta *HTML* se puede indicar ***disabled*** para deshabilitarlo.
