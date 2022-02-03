@@ -14,9 +14,9 @@ En cuanto al tamaño de los elementos, se suele usar una medida absoluta para la
 
 Para establecer las dimensiones del contenido, simplemente, se utilizan las propiedades `height` y `width`.
 
-Para definir el *padding* podemos utilizar el *shorthand* ***padding***. Si especificamos un solo tamaño, lo utilizará para los cuatro márgenes. Si indicamos dos, el primero se usará para el margen superior e inferior, y el segundo para derecha e izquierda. Podemos establecer los cuatro márgenes en este orden: arriba, derecha, abajo, izquierda.
+Para definir el *padding* podemos utilizar el *shorthand* `padding`. Si especificamos un solo tamaño, lo utilizará para los cuatro márgenes (***top***, ***right***, ***bottom***, ***left***). Si indicamos dos, el primero se usará para el margen superior e inferior, y el segundo para derecha e izquierda. Podemos establecer los cuatro márgenes en este orden: arriba, derecha, abajo, izquierda.
 
-Mediante el *shorthand* `border` podemos definir el borde, especificando, en este orden, el tamaño, estilo y color. El tamaño puede ser cualquier medida que queramos para el grosor del borde. El estilo indica cómo se dibuja el borde, por ejemplo punteado (***dotted***), discontinuo (***dashed***), sólido (***solid***) o doble (***double***). En cuanto al color, cualquier color valdrá.
+Mediante el *shorthand* `border` podemos definir el borde, especificando, en este orden, el tamaño (***size***), estilo (***style***) y color (***color***). El tamaño puede ser cualquier medida que queramos para el grosor del borde. El estilo indica cómo se dibuja el borde, por ejemplo punteado (***dotted***), discontinuo (***dashed***), sólido (***solid***) o doble (***double***). En cuanto al color, cualquier color valdrá.
 
 Los márgenes se pueden definir con el *shorthand* ***margin***. Funciona igual que ***padding***.
 
@@ -61,7 +61,7 @@ Para gestionar el espacio de forma *responsive* en caso de que ampliar o reducir
 - `flex-grow` indica, al ampliarse el *flexbox*, la velocidad de ampliación de la anchura de cada elemento a partir de su anchura mínima. Si se les da el mismo número a todos, todos se ensancharán a la misma velocidad. El valor por defecto es 0 (no ensanchar).
 - `flex-shrink` es la velocidad con la que el elemento se encoge durante la reducción de la caja, a partir de su anchura mínima. El valor por defecto es 1. Si se le da valor 0, el elemento no encogerá.
 
-Existe un *shorthand* para estas propiedades: `flex`. Si se le dan tres argumentos, los toma como *grow*, *shrink* y *basis*.
+Existe un *shorthand* para estas propiedades: `flex`. Si se le dan tres argumentos, los toma como ***grow***, ***shrink*** y ***basis***.
 
 Independientemente de la alineación (vertical) definida en el contenedor, cada elemento puede tener su propia alineación, que *overrides* la del contenedor (`align-items`). La propiedad del elemento es `align-self`.
 

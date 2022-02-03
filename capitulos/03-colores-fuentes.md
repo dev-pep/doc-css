@@ -4,7 +4,7 @@
 
 Para dar valor a las propiedades de color, debemos definir un color. Hay 3 formas de hacerlo: por nombre (***skyblue***), por código hexadecimal *RGB* (***#87cefa*** o ***#3f5***) o mediante la función `rgb()` (***rgb(135,206,235)***).
 
-Para color del texto se usa la propiedad `color`. Para color de fondo, `background-color`, aunque se puede usar el *shorthand* `background`.
+Para color del texto se usa la propiedad `color`. Para color de fondo, `background-color`, aunque se puede usar el *shorthand* `background`, que equivaldrá a `background-color` o `background-image` según el valor proporcionado.
 
 Esto son ejemplos válidos de establecer un fondo a través `background`:
 
@@ -62,7 +62,7 @@ Junto a cada color podemos especificar los puntos del gradiente (en porcentaje) 
 
 **Unidades absolutas:** centímetros (***cm***), milímetros (***mm***), pulgadas, etc. En cuanto a los píxeles (***px***), es una unidad que depende de la resolución (*dpi*) de la pantalla. Un píxel tiene el mismo tamaño en cualquier dispositivo, al igual que el resto de unidades absolutas.
 
-**Unidades relativas:** porcentajes (***%***), tamaño relativo al tipo de fuente actual por defecto del elemento (***em***). Las unidades ***vh*** y ***vw*** indican un 1% del total del *viewport* donde estamos viendo la página (incluyendo los márgenes).
+**Unidades relativas:** porcentajes (***%***), tamaño relativo al tipo de fuente actual por defecto del elemento (***em***), o del tipo de fuente raíz (***rem***, del elemento `<html>`, *root em*). Las unidades ***vh*** y ***vw*** indican un 1% del total del *viewport* donde estamos viendo la página (incluyendo los márgenes).
 
 ## Texto y fuentes
 
