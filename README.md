@@ -15,7 +15,7 @@ Estos son mis apuntes de *CSS*.
 
 ## Fuentes
 
-- [Bootstrap]: https://getbootstrap.com/docs
+[Bootstrap]: https://getbootstrap.com/docs
 
 ---
 
