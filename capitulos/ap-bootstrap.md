@@ -1,6 +1,6 @@
 # Bootstrap
 
-Apuntes de los aspectos más relevantes de *Bootstrap 5*.
+Apuntes de los aspectos más relevantes de *Bootstrap 5*. Debido a la gran cantidad de utilidades y componentes, no se detallará aquí todo. Para aspectos específicos, consúltese la documentación oficial (https://getbootstrap.com/docs).
 
 ## Instalación
 
@@ -42,9 +42,7 @@ Si queremos evitarnos la descarga, es posible acceder a los archivos en el cache
 
 También es posible usar gestores de paquetes, como *npm* o *yarn*.
 
-## Sistema de rejilla (*grid*)
-
-Dividido en 12 columnas. Basado en el *flexbox CSS*. Es la característica clave de *Bootstrap*.
+## *Layout*
 
 ### *Breakpoints*
 
@@ -91,6 +89,10 @@ Estos son los tamaños que ocupa un contenedor según la resolución horizontal:
 | ***container-xxl***   |     100% |	  100% |     100% |     100% |      100% |    1320px |
 | ***container-fluid*** |     100% |	  100% |     100% |     100% |      100% |     100% |
 
+### *Grid*
+
+El sistema de rejilla (*grid*) está dividido en 12 columnas. Basado en el *flexbox CSS*. Es la característica clave de *Bootstrap*.
+
 Dentro del contenedor tenemos filas (clase ***row***), y dentro de estas, columnas (clases ***col***). Si todas las columnas de una fila tienen como ancho simplemente ***row***, se le dará automáticamente un ancho a cada una (entre 1 y 12), dependiendo de su contenido. Dependiendo de la resolución se podrá mostrar una fila en una o más filas en pantalla.
 
 Si a una de las columnas le asignamos un ancho (***col-5***, p.e.), las otras obtendrán anchos asignados automáticamente.
@@ -133,11 +135,13 @@ En cuanto a la alineación horizontal, se pueden aplicar, en las **filas**, las 
 
 Cuando la suma de anchos supera 12, la siguiente columna se pasa debajo (*wrapped*).
 
-### Espaciado
+### *Gutters*
 
 Tanto los contenedores como las filas como las columnas tienen un margen (alrededor) y un *padding* o *gutter* (interno). Para cambiar estos valores se usan las clases ***m-0*** (sin margen) a ***m-5*** para el margen, o ***p-0*** (sin *padding*) a ***p-5*** para el *padding*. En el caso de filas o columnas, por ejemplo, el margen indica la separación entre ellas.
 
 También es posible especificar solo la componente vertical u horizontal del espaciado, insertando ***x*** o ***y*** como segundo carácter de la clase: ***mx-4***, ***py-2***, etc. En lugar de ***x*** e ***y***, existen los caracteres ***t***, ***b***, ***l*** y ***r*** (arriba, abajo, izquierda, derecha).
+
+Las clases para *padding* y margen de *Bootstrap* no se limitan solo al sistema de rejilla.
 
 ## Componentes
 
