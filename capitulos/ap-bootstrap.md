@@ -1,6 +1,6 @@
 # Bootstrap
 
-Apuntes de los aspectos más relevantes de *Bootstrap 5*. Debido a la gran cantidad de utilidades y componentes, no se detallará aquí todo. Para aspectos específicos, consúltese la documentación oficial (https://getbootstrap.com/docs).
+Apuntes de los aspectos más relevantes de *Bootstrap 5*. Debido a la gran cantidad de utilidades y componentes, solo se detallarán algunos elementos relevantes. Para aspectos específicos, consúltese la documentación oficial (https://getbootstrap.com/docs).
 
 ## Instalación
 

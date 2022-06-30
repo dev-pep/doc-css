@@ -5,6 +5,7 @@ Aquí veremos la disposición de elementos en pantalla (*layout*).
 ## Box (caja)
 
 La disposición básica en caja (rectangular) tiene estos elementos:
+
 - **Contenido:** en el centro de la caja.
 - ***Padding:*** margen interior, entre el contenido y el borde.
 - **Borde:** el recuadro visible.
@@ -25,9 +26,17 @@ Los márgenes se pueden definir con el *shorthand* ***margin***. Funciona igual 
     height: 400px;
     width: 70%;
     padding: 10px;
-    border-style: 3px solid blue;
+    border: 3px solid blue;
     margin: 25px 30px;
 }
+```
+
+En este caso, `border: 3px solid blue;` equivale a:
+
+```
+border-size: 3px;
+border-style: solid;
+border-color: blue;
 ```
 
 ## *Float* y *display*
@@ -56,7 +65,8 @@ En cuanto a la alineación vertical, existe la propiedad `align-items`. Por defe
 
 A los elementos del contenedor se les puede dar la propiedad *CSS* `order` (por ejemplo con estilado *inline*), con un número, y quedan ordenados de la forma indicada.
 
-Para gestionar el espacio de forma *responsive* en caso de que ampliar o reducir el tamaño del *flexbox*, se le puede dar a los elementos que lo componen las siguientes propiedades:
+Para gestionar el espacio de forma *responsive* en caso de ampliar o reducir el tamaño del *flexbox*, se le puede dar a los elementos que lo componen las siguientes propiedades:
+
 - `flex-basis` define la anchura mínima del elemento.
 - `flex-grow` indica, al ampliarse el *flexbox*, la velocidad de ampliación de la anchura de cada elemento a partir de su anchura mínima. Si se les da el mismo número a todos, todos se ensancharán a la misma velocidad. El valor por defecto es 0 (no ensanchar).
 - `flex-shrink` es la velocidad con la que el elemento se encoge durante la reducción de la caja, a partir de su anchura mínima. El valor por defecto es 1. Si se le da valor 0, el elemento no encogerá.
@@ -143,7 +153,7 @@ Permite definir una animación con *keyframes*, para aplicarlas a cualquier elem
 }
 ```
 
-En lugar de porcentajes, se puede indicar los valores ***to*** y ***from***, que indican principio y final.
+En lugar de porcentajes, se pueden usar los valores ***to*** y ***from***, que indican principio y final.
 
 Para aplicar una animación definida, a un elemento, debemos asignarla y configurarla:
 

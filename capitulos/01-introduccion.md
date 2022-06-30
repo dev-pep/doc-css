@@ -27,7 +27,7 @@ Hay tres formas de enlazar *CSS* en un archivo *HTML*. La más habitual es, dent
 <link rel="stylesheet" type="text/css" href="estilos.css">
 ```
 
-Esto carga los estilos definidos en ***estilos.css***. El archivo debe indicarse con una ruta relativa a la ubicación del documento actual (es atributo `type` no es estrictamente necesario). El enlace al archivo sigue la ruta especificada, relativa al documento actual.
+Esto carga los estilos definidos en ***estilos.css***. El archivo debe indicarse con una ruta relativa a la ubicación del documento actual (el atributo `type` no es estrictamente necesario).
 
 Por otro lado, se puede crear una hoja de estilo interna, incluyéndola en la sección `<style>` dentro de la sección `<head>`.
 
@@ -39,7 +39,7 @@ Y por último, se puede definir el estilo de cada elemento por separado (estilo 
 
 ## Definición de estilos
 
-Para cambiar solo cierto elementos de un tipo, y no todos ellos (por ejemplo, solo algunos elementos `<li>`), se puede especificar una clase (`class`) y definir el estilo para esa clase, y no para una etiqueta:
+Para cambiar solo ciertos elementos de un tipo, y no todos ellos (por ejemplo, solo algunos elementos `<li>`), se puede especificar una clase (`class`) y definir el estilo para esa clase, y no para una etiqueta:
 
 ```html
 <li>Elemento uno</li>
@@ -54,7 +54,7 @@ Y en el archivo de estilos:
     color: orange;
 }
 ```
-En caso que queramos especificar el estilo de una clase (por ejemplo ***especial***), pero solo cuando pertenezca a una etiqueta concreta (por ejemplo `<li>`). En este caso usamos un *combinator* como selector:
+En caso que queramos especificar el estilo de una clase (por ejemplo ***especial***), pero solo cuando pertenezca a una etiqueta concreta (por ejemplo `<li>`), usaremos un *combinator* como selector:
 
 ```css
 li.especial {
@@ -82,7 +82,7 @@ h1 + p {
 }
 ```
 
-En este caso se aplicará a los párrafos `<p>` que estén inmediatamente después de los encabezados `<h1>`.
+En este caso se aplicará a los párrafos `<p>` que estén inmediatamente después de un encabezado `<h1>`.
 
 Algunos elementos pueden estilizarse en función de su estado. Por ejemplo, un enlace puede haber sido visitado ya o no; o puede tener el puntero del ratón encima. En este caso se usan los dos puntos (***:***):
 
@@ -108,7 +108,7 @@ h1 + ul + p { ... }
 body h1 + p .especial { ... }
 ```
 
-El último de los ejemplos define el estilo de las etiquetas con clase ***especial*** que estén dentro de un párrafo `<p>`, el cual esté definido justo después de un encabezado `h1` que esté dentro de la sección `<body>`.
+El último de los ejemplos define el estilo de las etiquetas con clase ***especial*** que estén **dentro** de un párrafo `<p>`, el cual esté definido justo después de un encabezado `h1` que esté dentro de la sección `<body>`.
 
 Cuando hay conflicto entre dos estilos, se aplican las reglas de cascada (*cascade*) y especificidad (*specificity*).
 
@@ -170,11 +170,11 @@ body { background-color: pink; }
 }
 ```
 
-En este caso, se define un fondo rosa, pero si el navegador es más ancho de de ***30em***, el color de fondo será azul.
+En este caso, se define un fondo rosa, pero si el navegador es más ancho o igual que ***30em***, el color de fondo será azul.
 
 ## *Shorthands*
 
-Las propiedades `font`, `background`, `padding`, `border` y `margin` se denominan *shortdands* porque equivalen a varias propiedades a la vez. Por ejemplo:
+Las propiedades `font`, `background`, `padding`, `border` y `margin` se denominan *shorthands* porque equivalen a varias propiedades a la vez. Por ejemplo:
 
 ```
 padding: 10px 15px 15px 5px;

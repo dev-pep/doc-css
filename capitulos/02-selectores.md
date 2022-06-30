@@ -27,6 +27,7 @@ Selecciona un elemento concreto. En el ejemplo estaríamos seleccionando un elem
 El selector más específico tiene preferencia. Ante dos selectores en conflicto con la misma especificidad, tiene preferencia el que está declarado más tarde.
 
 Especificidad, en orden ascendente:
+
 - Elemento (etiqueta *HTML*).
 - Clase.
 - *ID*.
@@ -64,6 +65,7 @@ El selector `li:only-child` se aplicaría solo a los elementos `<li>` que fuesen
 ## Selectores avanzados
 
 Incluye los *combinators*:
+
 - Elementos adyacentes (***+***).
 - Elementos adyacentes, que además compartan el mismo padre (***~***).
 - Elemento descendiente (espacio).
