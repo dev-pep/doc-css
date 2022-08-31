@@ -127,21 +127,21 @@ Se pueden anidar una o más filas dentro de una columna.
 
 Si queremos dar a las columnas, filas y/o contenedores un borde por defecto, les podemos incluir la clase ***border***.
 
-### Columnas
+### Alineación de columnas
 
-Para alinear verticalmente las columnas dentro de una fila, existen las clases (para las **filas**) ***align-items-start***, ***align-items-center*** y ***align-items-end***. Si queremos alinear una columna individualmente, a la misma se le puede dar una clase ***align-self-start***, ***align-self-center*** o ***align-self-end***. La alineación especificada en la columna tendrá prioridad sobre la especificada en la fila. Si una columna no está alineada verticalmente, ocupará todo el alto de la fila.
+Para **alinear verticalmente** las columnas dentro de una fila, existen las clases (para las **filas**) ***align-items-start***, ***align-items-center*** y ***align-items-end***. Si queremos alinear una columna individualmente, a la misma se le puede dar una clase ***align-self-start***, ***align-self-center*** o ***align-self-end***. La alineación especificada en la columna tendrá prioridad sobre la especificada en la fila. Si una columna no está alineada verticalmente, ocupará todo el alto de la fila.
 
-En cuanto a la alineación horizontal, se pueden aplicar, en las **filas**, las clases ***justify-content-\****, con los sufijos ***start***, ***center***, ***end***, ***around***, ***between*** y ***evenly***.
+En cuanto a la **alineación horizontal**, se pueden aplicar, en las **filas**, las clases ***justify-content-\****, con los sufijos ***start***, ***center***, ***end***, ***around***, ***between*** y ***evenly***.
 
 Cuando la suma de anchos supera 12, la siguiente columna se pasa debajo (*wrapped*).
 
-### *Gutters*
+### Espaciado
 
-Tanto los contenedores como las filas como las columnas tienen un margen (alrededor) y un *padding* o *gutter* (interno). Para cambiar estos valores se usan las clases ***m-0*** (sin margen) a ***m-5*** para el margen, o ***p-0*** (sin *padding*) a ***p-5*** para el *padding*. En el caso de filas o columnas, por ejemplo, el margen indica la separación entre ellas.
+Para definir el margen (espaciado exterior, alrededor) los objetos pueden usar las clases ***m-0*** (sin margen) a ***m-5***. De forma similar, para el *padding* (espaciado interior) se usan ***p-0*** (sin *padding*) a ***p-5***.
 
-También es posible especificar solo la componente vertical u horizontal del espaciado, insertando ***x*** o ***y*** como segundo carácter de la clase: ***mx-4***, ***py-2***, etc. En lugar de ***x*** e ***y***, existen los caracteres ***t***, ***b***, ***l*** y ***r*** (arriba, abajo, izquierda, derecha).
+En el casos específico del *grid* (filas y columnas) existe un ajuste, el *gutter*, que combina margen y *padding* de forma más óptima (podemos especificar ***g-0*** a ***g-5***). El *gutter* se aplica a la fila, y eso establece el *padding* para las columnas. De esta forma ya no hay que especificar el *padding* para cada columna.
 
-Las clases para *padding* y margen de *Bootstrap* no se limitan solo al sistema de rejilla.
+También es posible especificar solo los márgenes *paddings* o *gutters* verticales (arriba, abajo) u horizontales (izquierda, derecha), insertando ***x*** o ***y*** como segundo carácter de la clase: ***mx-4***, ***py-2***, ***gy-3*** etc. En lugar de ***x*** e ***y***, existen los caracteres ***t***, ***b***, ***l*** y ***r*** (arriba, abajo, izquierda, derecha).
 
 ## Componentes
 
