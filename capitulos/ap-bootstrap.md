@@ -145,9 +145,11 @@ En ocasiones, el contenido de un elemento (como una columna) no cabe dentro del 
 
 Para definir el margen (espaciado exterior, alrededor) los objetos pueden usar las clases ***m-0*** (sin margen) a ***m-5***. De forma similar, para el *padding* (espaciado interior) se usan ***p-0*** (sin *padding*) a ***p-5***.
 
-En el casos específico del *grid* (filas y columnas) existe un ajuste, el *gutter*, que combina margen y *padding* de forma más óptima (podemos especificar ***g-0*** a ***g-5***). El *gutter* se aplica a la fila, y eso establece el *padding* para las columnas. De esta forma ya no hay que especificar el *padding* para cada columna.
+También es posible especificar solo los márgenes y/o *paddings* verticales (arriba, abajo) u horizontales (izquierda, derecha), insertando ***x*** o ***y*** como segundo carácter de la clase: ***mx-4***, ***py-2***, etc. Se puede ser todavía más específico, utilizando los caracteres ***t*** (*top*, arriba), ***b*** (*bottom*, abajo), ***s*** (*start*, izquierda) y ***e*** (*end*, derecha): ***me-2***, ***pt-3***, etc.
 
-También es posible especificar solo los márgenes *paddings* o *gutters* verticales (arriba, abajo) u horizontales (izquierda, derecha), insertando ***x*** o ***y*** como segundo carácter de la clase: ***mx-4***, ***py-2***, ***gy-3*** etc. En lugar de ***x*** e ***y***, existen los caracteres ***t***, ***b***, ***l*** y ***r*** (arriba, abajo, izquierda, derecha).
+En el caso específico del *grid* (filas y columnas), aunque también se pueden usar los ajustes de margen y *padding*, es preferible por su comodidad utilizar el ajuste *gutter*. Lo podemos usar especificando ***g-0*** a ***g-5*** **en la fila**. El *gutter* establece entonces el *padding* para cada una de las columnas contenidas en dicha fila, y de esta forma solo hay que especificarlo en un solo lugar (la fila), y no en cada una de las columnas, una a una.
+
+El *gutter* admite además especificación vertical u horizontal (***gx-3***, ***gy-2***, etc.).
 
 ## Componentes
 
