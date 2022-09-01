@@ -135,6 +135,8 @@ En cuanto a la **alineación horizontal**, se pueden aplicar, en las **filas**, 
 
 Cuando la suma de anchos supera 12, la siguiente columna se pasa debajo (*wrapped*).
 
+En cuanto a la **alineación horizontal del texto** que contiene una columna, podemos alinearlo con las clases ***text-start***, ***text-center*** o ***text-end***.
+
 ### Espaciado
 
 Para definir el margen (espaciado exterior, alrededor) los objetos pueden usar las clases ***m-0*** (sin margen) a ***m-5***. De forma similar, para el *padding* (espaciado interior) se usan ***p-0*** (sin *padding*) a ***p-5***.
