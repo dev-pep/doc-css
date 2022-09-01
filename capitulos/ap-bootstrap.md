@@ -137,6 +137,10 @@ Cuando la suma de anchos supera 12, la siguiente columna se pasa debajo (*wrappe
 
 En cuanto a la **alineación horizontal del texto** que contiene una columna, podemos alinearlo con las clases ***text-start***, ***text-center*** o ***text-end***.
 
+### Overflow
+
+En ocasiones, el contenido de un elemento (como una columna) no cabe dentro del mismo. En ese caso, por defecto se produce un *overflow*: el contenido se derrama fuera del elemento. Para evitarlo, se puede añadir la clase ***overflow-auto*** al elemento, de tal modo que el contenido quedará dentro, y se podrá visualizar con desplazamiento (*scroll*). La otra opción es ***overflow-hidden***, que simplemente trunca la visualización del contenido al tamaño del elemento.
+
 ### Espaciado
 
 Para definir el margen (espaciado exterior, alrededor) los objetos pueden usar las clases ***m-0*** (sin margen) a ***m-5***. De forma similar, para el *padding* (espaciado interior) se usan ***p-0*** (sin *padding*) a ***p-5***.
