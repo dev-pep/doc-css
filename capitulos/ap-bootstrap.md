@@ -147,7 +147,7 @@ Para definir el margen (espaciado exterior, alrededor) los objetos pueden usar l
 
 También es posible especificar solo los márgenes y/o *paddings* verticales (arriba, abajo) u horizontales (izquierda, derecha), insertando ***x*** o ***y*** como segundo carácter de la clase: ***mx-4***, ***py-2***, etc. Se puede ser todavía más específico, utilizando los caracteres ***t*** (*top*, arriba), ***b*** (*bottom*, abajo), ***s*** (*start*, izquierda) y ***e*** (*end*, derecha): ***me-2***, ***pt-3***, etc.
 
-En el caso específico del *grid* (filas y columnas), aunque también se pueden usar los ajustes de margen y *padding*, es preferible por su comodidad utilizar el ajuste *gutter*. Lo podemos usar especificando ***g-0*** a ***g-5*** **en la fila**. El *gutter* establece entonces el *padding* para cada una de las columnas contenidas en dicha fila, y de esta forma solo hay que especificarlo en un solo lugar (la fila), y no en cada una de las columnas, una a una.
+En el caso específico del *grid* (filas y columnas), aunque también se pueden usar los ajustes de margen y *padding*, es preferible por su comodidad utilizar el ajuste *gutter*. Este mecanismo establece la separación **entre columnas** de una misma fila. Lo podemos usar especificando ***g-0*** a ***g-5*** **en la fila**. El *gutter* establece entonces el *padding* para cada una de las columnas contenidas en dicha fila, y de esta forma solo hay que especificarlo en un solo lugar (la fila), y no en cada una de las columnas, una a una.
 
 El *gutter* admite además especificación vertical u horizontal (***gx-3***, ***gy-2***, etc.).
 
